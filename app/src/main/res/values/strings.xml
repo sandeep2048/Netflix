@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Netflix</string>
+    <string name="info">This app show all Netflix movies in the world avaiable in that country.You can connect VPN to that particular country and enjoy the show in Netflix.</string>
 </resources>

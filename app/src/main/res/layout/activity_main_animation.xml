@@ -18,7 +18,6 @@
         android:animateLayoutChanges="true"
         android:background="@drawable/parent_search_background"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -35,17 +34,6 @@
             android:textColor="@color/parent_background"
             android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/search_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:background="@null"
-            android:gravity="center_vertical"
-            android:hint="Search Movies"
-            android:textColorHint="@color/parent_background"
-            android:visibility="gone" />
     </LinearLayout>
 
     <TextView
@@ -57,19 +45,6 @@
         android:textColor="#FFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/parent_view" />
-
-    <com.github.ybq.android.spinkit.SpinKitView
-        android:id="@+id/loading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/SpinKitView.Large.FoldingCube"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:visibility="gone"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/parent_view" />
 
     <androidx.recyclerview.widget.RecyclerView
